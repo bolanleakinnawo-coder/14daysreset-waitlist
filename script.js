@@ -1,6 +1,7 @@
 // Waitlist link: change it once here
+
 const WAITLIST_URL =
-  "https://chat.whatsapp.com/Cd4oGvxLNGGI2K6JSkkzSS?mode=gi_t";
+  "https://chat.whatsapp.com/H6MK19FBGlN5860mfNh1Pj?s=cl&p=i&mlu=4&ilr=4";
 document.querySelectorAll("[data-wa]").forEach((a) => {
   a.href = WAITLIST_URL;
   a.target = "_blank";
@@ -58,10 +59,7 @@ track.addEventListener("scroll", () => {
 });
 document.getElementById("prev").onclick = () => go(index - 1);
 document.getElementById("next").onclick = () => go(index + 1);
-function restart() {
-  clearInterval(timer);
-  timer = setInterval(() => go(index + 1), 5000);
-}
+
 const car = document.getElementById("carousel");
 
 function updateCarouselHeight() {
@@ -80,4 +78,3 @@ car.addEventListener("touchstart", () => clearInterval(timer), {
   passive: true,
 });
 mark();
-restart();

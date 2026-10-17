@@ -47,6 +47,9 @@ h3 {
   line-height: 1.2;
   font-weight: 700;
 }
+a {
+  text-decoration: none;
+}
 h2 {
   font-size: clamp(1.6rem, 4vw, 2.3rem);
   margin-bottom: 18px;
@@ -65,12 +68,22 @@ p {
   color: #34402a;
 }
 
+.space-removal {
+  padding: 0;
+}
+
+.top-space {
+  padding-top: 20px;
+}
 /* nav */
 
 .top {
-  background: var(--card);
+  background: #21251b;
 }
 
+.end {
+  background: #21251b;
+}
 .nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -90,6 +103,7 @@ p {
   align-items: center;
   flex-shrink: 0;
   line-height: 0;
+  color: var(--cream-green);
 }
 
 .logo img {
@@ -123,7 +137,7 @@ p {
 }
 .eyebrow {
   color: #c4d1a8;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   letter-spacing: 0.16em;
   font-weight: 700;
   margin-bottom: 16px;
@@ -521,9 +535,7 @@ p {
   margin: 0;
   color: var(--muted);
 }
-.end {
-  background: var(--card);
-}
+
 .brandline {
   margin: 18px 0 0;
   font-weight: 700;
